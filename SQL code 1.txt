@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS CompanyDB;
+USE CompanyDB;
+
+CREATE TABLE IF NOT EXISTS employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    position VARCHAR(50),
+    salary DECIMAL(10, 2),
+    date_hired DATE
+);
+SELECT * FROM employees;
